@@ -153,6 +153,7 @@ a {
   background-image: url(background2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  filter:brightness(0.4);
   position: absolute;
   top: 0;
   left: 0;
