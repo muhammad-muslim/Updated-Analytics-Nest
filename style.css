@@ -150,7 +150,7 @@ a {
 
 .background::after {
   content: "";
-  background-image: url(image/background2.jpg);
+  background-image: url(background2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
