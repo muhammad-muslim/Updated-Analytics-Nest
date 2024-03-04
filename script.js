@@ -2,9 +2,9 @@
    
  
     var images = [
-      "image/background4.jpg",
-      "image/background2.jpg",
-      "image/background3.jpg",
+      "background4.jpg",
+      "background2.jpg",
+      "background3.jpg",
     ];
     var currentIndex = 0;
     var bgImage = document.querySelector(".bg-image");
@@ -66,13 +66,13 @@
 
       switch (tabId) {
         case "tab1":
-          tabImage.src = "image/Potential-of-your-data.png";
+          tabImage.src = "Potential-of-your-data.png";
           break;
         case "tab2":
-          tabImage.src = "image/Our-Value.png";
+          tabImage.src = "Our-Value.png";
           break;
         case "tab3":
-          tabImage.src = "image/Potential-of-your-data.png";
+          tabImage.src = "Potential-of-your-data.png";
           break;
         default:
           // Handle default case if needed
