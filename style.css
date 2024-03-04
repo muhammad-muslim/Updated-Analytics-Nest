@@ -1,0 +1,279 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  list-style: none;
+ 
+  /* outline: 1px solid; */
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.navbar {
+  background-color: transparent !important;
+  position: absolute;
+  width: 100%;
+  z-index: 8;
+  /* Ensure navbar is above the background image */
+}
+
+.navbar-brand,
+.nav-link {
+  color: white;
+  /* Set navbar brand and link text color */
+  width: 150px;
+  /* Set width to fit its content */
+  font-size: 18px;
+}
+
+.content {
+  padding: 20px;
+  color: black;
+  /* Set content text color */
+  position: relative;
+  /* Ensure content is not covered by navbar */
+  top: 180px;
+  z-index: 1;
+  /* Ensure content is above the background image */
+  height: 100%;
+  /* Make content fill the entire height of the container */
+}
+
+.modern {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.bg-container {
+  min-height: 650px;
+  position: relative;
+  /* Ensure proper positioning of absolute child */
+}
+.bg-containerContact{
+  min-height: 400px;
+  position: relative;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.5s ease-in-out;
+  filter: brightness(0.3);
+}
+.bg-imageContact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.5s ease-in-out;
+  filter: brightness(0.3);
+}
+
+
+/* parallex */
+.parallax-container {
+  height: 400px;
+  /* Adjust height as needed */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  perspective: 1px;
+  position: relative;
+}
+
+.parallax {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.parallax img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -1750px;
+  left: 0;
+  transform: translateZ(-1px) scale(2);
+  filter: brightness(0.3);
+}
+
+.responsive {
+  display: none;
+}
+
+.change {
+  position: relative;
+  top: -380px;
+}
+
+@media (max-width: 991px) {
+  .responsive {
+    display: block;
+  }
+
+  .parallax img {
+    display: none;
+  }
+
+  .parallax-container {
+    display: none;
+  }
+
+  .parallax {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+  }
+
+  .change {
+    position: relative;
+    top: -225px;
+  }
+}
+
+.background {
+  position: relative;
+}
+
+.background::after {
+  content: "";
+  background-image: url(image/background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.red-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(176, 80%, 37%);
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.text {
+  position: relative;
+  color: white;
+  z-index: 2;
+}
+
+.text h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.op {
+  filter: blur(5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.search-container {
+  display: flex;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* universal css for all pages */
+.threecardsHome {
+  position: relative;
+  bottom: 50px;
+}
+
+.threeCardsFont {
+  font-size: 15px;
+}
+
+.bg-danger {
+  background-color: #13a89e !important;
+}
+
+.text-danger {
+  color: #13a89e !important;
+}
+
+.btn-danger {
+  background-color: #13a89e !important;
+  border: 1px solid #13a89e !important;
+}
+
+.rows {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.rowss {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.rowsss{
+  display: flex;
+  justify-content: center;
+  }
+
+.marginForAll{
+  margin: 13px;
+}

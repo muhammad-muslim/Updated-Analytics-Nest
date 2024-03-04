@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics-Home</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="service.css" />
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- AOS -->
+    
+    <style>
+      .hoverCardHome {
+        position: relative;
+        overflow: hidden;
+        height: 310px;
+        margin: 0;
+        padding: 0;
+      }
+      @media (width: 1024px) {
+        .hoverCardHome {
+          position: relative;
+          overflow: hidden;
+          height: 340px;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .hoverCardHome-content {
+        position: absolute;
+        color: black;
+        z-index: 1;
+        transition: color 0.5s;
+      }
+
+      .hoverCardHome-content p {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+
+      .hoverCardHome-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: hsl(176, 80%, 37%);
+        transition: height 0.7s;
+      }
+
+      .hoverCardHome:hover .hoverCardHome-overlay {
+        height: 100%;
+      }
+
+      .hoverCardHome:hover .hoverCardHome-content {
+        color: white;
+      }
+      .hoverCardHome:hover .hoverCardHome-content span {
+        color: white;
+      }
+      .fontHomeSpan {
+        font-size: 60px;
+        font-weight: 500;
+        color: hsl(176, 80%, 37%);
+      }
+
+      .threecardsHome {
+        position: relative;
+        bottom: 90px;
+      }
+
+      /* Sec */
+
+      .hoverCardHomeSec {
+        position: relative;
+        overflow: hidden;
+        height: 310px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .hoverCardHomeSec-content {
+        position: absolute;
+        color: black;
+        z-index: 1;
+        transition: color 0.5s;
+      }
+
+      .hoverCardHomeSec-content p {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+
+      .hoverCardHomeSec-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: hsl(176, 80%, 37%);
+        transition: height 0.7s;
+      }
+
+      .hoverCardHomeSec:hover .hoverCardHomeSec-overlay {
+        height: 100%;
+      }
+
+      .hoverCardHomeSec:hover .hoverCardHomeSec-content {
+        color: white;
+      }
+      .hoverCardHomeSec:hover .hoverCardHomeSec-content span {
+        color: white;
+      }
+      .fontHomeSecSpan {
+        font-size: 60px;
+        font-weight: 500;
+        color: hsl(176, 80%, 37%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a
+          class="navbar-brand text-light"
+          style="width: 200px"
+          href="index.html"
+          ><img src="image/final-logoW.png" class="img-fluid" alt=""
+        /></a>
+
+        <button
+          class="navbar-toggler bg-danger"
+          type="button"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="service.html"
+                >OUR SERVICES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="portfolio.html">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- CONTENT OVER BACKGROUND START -->
+    <div class="bg-container">
+      <div
+        class="bg-image"
+        style="background-image: url('image/background4.jpg')"
+      ></div>
+      <div class="container content">
+        <div class="row rows">
+          <div class="col-md-6 text-light">
+            <h1 class="modern">Modern IT & Tech Service Solutions</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco
+            </p>
+            <a href="#" class="btn btn-md btn-danger">CONTACT US</a>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTENT OVER BACKGROUND END -->
+
+    <!-- OFF CANVAS START -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header bg-dark">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <a class="navbar-brand text-light" style="width: 100px" href="#"
+            ><img
+              src="image/final-logoW.png"
+              width="250px"
+              class="img-fluid"
+              alt=""
+          /></a>
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset bg-danger"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body bg-danger">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold mx-3" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold mx-3" href="service.html"
+              >Our Services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold mx-3" href="about.html"
+              >About us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold mx-3" href="portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold mx-3" href="contact.html"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- OFF CANVAS END -->
+
+    <!-- FIRST THREE CARDS START -->
+    <div class="container-fluid mt-5 threecardsHome">
+      <div class="row justify-content-center marginForAll">
+        <div
+          class="col-lg-3 mx-lg-2 col-md-6 col-sm-12 shadow mb-5 bg-body pt-5 pb-5 text-center hoverCardHome"
+        >
+          <div class="hoverCardHome-content">
+            <span class="material-symbols-outlined fontHomeSpan">
+              developer_mode_tv
+            </span>
+            <h3>IT Expertise</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore dolore
+            </p>
+          </div>
+          <div class="hoverCardHome-overlay"></div>
+        </div>
+        <div
+          class="col-lg-3 mx-lg-2 col-md-6 col-sm-12 shadow mb-5 bg-body pt-5 pb-5 text-center hoverCardHome"
+        >
+          <div class="hoverCardHome-content">
+            <span class="material-symbols-outlined fontHomeSpan">
+              developer_mode_tv
+            </span>
+            <h3>24/7 IT Support</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore dolore
+            </p>
+          </div>
+          <div class="hoverCardHome-overlay"></div>
+        </div>
+        <div
+          class="col-lg-3 mx-lg-2 col-md-12 col-sm-12 shadow mb-5 bg-body pt-5 pb-5 pl-md-5 pl-lg-0 text-center hoverCardHome"
+        >
+          <div class="hoverCardHome-content">
+            <span class="material-symbols-outlined fontHomeSpan">
+              developer_mode_tv
+            </span>
+            <h3>Custom Request</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore dolore
+            </p>
+
+            <div>
+              <a href="#" class="btn btn-light text-danger">FIND SOLUTION ></a>
+            </div>
+          </div>
+          <div class="hoverCardHome-overlay"></div>
+        </div>
+      </div>
+    </div>
+    <!-- FIRST THREE CARDS END -->
+
+    <!-- ABOUT US START -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <div class="row rows justify-content-center">
+            <div class="col-md-6 col-sm-12 order-md-1 order-2">
+              <div>
+                <img
+                  src="image/About-Main2.png"
+                  height="600px"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-5 order-md-2 order-1">
+              <div>
+                <h5 class="text-danger fw-bold">ABOUT US</h5>
+                <h1 class="fw-bold">Focused on Actionable Insights</h1>
+                <h6 class="text-muted">
+                  Unlock the Power of Your Data with Intelligent Insights.
+                </h6>
+                <div class="px-md-5 px-3 mt-3">
+                  <div class="">
+                    <div class="px-3" style="border-left: 3px solid #13a89e">
+                      <p class="px-1 text-dark fst-italic fw-bold">
+                        "Actionable insights empower decision-making. They are
+                        derived from data analysis and drive strategic actions."
+                      </p>
+                      <p class="px-1 text-muted">
+                        Actionable insights are meaningful data interpretations
+                        guiding strategic actions, pivotal for informed
+                        decision-making, leading to measurable outcomes and
+                        improvements.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-danger mt-2">GET STARTED</a>
+                <ul class="mt-4">
+                  <li>
+                    <div class="d-flex">
+                      <span class="material-symbols-outlined text-danger"
+                        >done</span
+                      >
+                      <p class="px-2 text-muted">Advance Advisory Team</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex">
+                      <span class="material-symbols-outlined text-danger"
+                        >done</span
+                      >
+                      <p class="px-2 text-muted">
+                        Professional Consulting Services
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex">
+                      <span class="material-symbols-outlined text-danger"
+                        >done</span
+                      >
+                      <p class="px-2 text-muted">24/7 Support Help Center</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex">
+                      <span class="material-symbols-outlined text-danger"
+                        >done</span
+                      >
+                      <p class="px-2 text-muted">
+                        Customer Service & Operations
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT US END -->
+
+    <!-- BENEFIT PORTION START -->
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center marginForAll">
+        <div class="col-lg-3 mx-lg-2 mb-5 col-md-12 col-sm-12 mt-5">
+          <div>
+            <h6 class="text-danger fs-5 fw-bold">OUR BENEFITS</h6>
+            <h2 class="fw-bold fs-2">Why Choose Analytics Nest?</h2>
+            <p class="text-muted fst-italic">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              illum laudantium
+            </p>
+            <a href="#" class="btn btn-danger btn-sm">Find Out More</a>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-3 mx-lg-2 col-md-6 col-sm-12 shadow mb-5 bg-body pt-5 pb-5 text-center hoverCardHomeSec"
+        >
+          <div class="hoverCardHomeSec-content">
+            <span class="material-symbols-outlined fontHomeSecSpan">
+              developer_mode_tv
+            </span>
+            <h3>Marketing Strategy</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore dolore
+            </p>
+
+            <div class="mt-4 d-flex justify-content-center">
+              <a href="#" class="text-dark">Read More</a>
+              <span class="material-symbols-outlined text-dark"
+                >trending_flat</span
+              >
+            </div>
+          </div>
+          <div class="hoverCardHomeSec-overlay"></div>
+        </div>
+        <div
+          class="col-lg-3 mx-lg-2 col-md-6 col-sm-12 shadow mb-5 bg-body pt-5 pb-5 pl-md-5 pl-lg-0 text-center hoverCardHomeSec"
+        >
+          <div class="hoverCardHomeSec-content">
+            <span class="material-symbols-outlined fontHomeSecSpan">
+              developer_mode_tv
+            </span>
+            <h3>Marketing Strategy</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore dolore
+            </p>
+            <div class="mt-4 d-flex justify-content-center">
+              <a href="#" class="text-dark">Read More</a>
+              <span class="material-symbols-outlined text-dark"
+                >trending_flat</span
+              >
+            </div>
+          </div>
+          <div class="hoverCardHomeSec-overlay"></div>
+        </div>
+        <div
+          class="col-lg-3 mx-lg-2 col-md-6 col-sm-12 shadow mb-5 bg-body pt-5 pb-5 text-center hoverCardHomeSec"
+        >
+          <div class="hoverCardHomeSec-content">
+            <span class="material-symbols-outlined fontHomeSecSpan">
+              developer_mode_tv
+            </span>
+            <h3>Marketing Strategy</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore dolore
+            </p>
+            <div class="mt-4 d-flex justify-content-center">
+              <a href="#" class="text-dark">Read More</a>
+              <span class="material-symbols-outlined text-dark"
+                >trending_flat</span
+              >
+            </div>
+          </div>
+          <div class="hoverCardHomeSec-overlay"></div>
+        </div>
+        <div
+          class="col-lg-3 mx-lg-2 col-md-6 col-sm-12 shadow mb-5 bg-body pt-5 pb-5 text-center hoverCardHomeSec"
+        >
+          <div class="hoverCardHomeSec-content">
+            <span class="material-symbols-outlined fontHomeSecSpan">
+              developer_mode_tv
+            </span>
+            <h3>Marketing Strategy</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore dolore
+            </p>
+
+            <div class="mt-4 d-flex justify-content-center">
+              <a href="#" class="text-dark">Read More</a>
+              <span class="material-symbols-outlined text-dark"
+                >trending_flat</span
+              >
+            </div>
+          </div>
+          <div class="hoverCardHomeSec-overlay"></div>
+        </div>
+        <div
+          class="col-lg-3 mx-lg-2 col-md-12 col-sm-12 shadow mb-5 bg-body pt-5 pb-5 pl-md-4 pl-lg-0 text-center hoverCardHomeSec"
+        >
+          <div class="hoverCardHomeSec-content">
+            <span class="material-symbols-outlined fontHomeSecSpan">
+              developer_mode_tv
+            </span>
+            <h3>Marketing Strategy</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore dolore
+            </p>
+
+            <div class="mt-4 d-flex justify-content-center">
+              <a href="#" class="text-dark">Read More</a>
+              <span class="material-symbols-outlined text-dark"
+                >trending_flat</span
+              >
+            </div>
+          </div>
+          <div class="hoverCardHomeSec-overlay"></div>
+        </div>
+      </div>
+    </div>
+    <!-- BENEFIT PORTION END -->
+
+    <!-- CARD CAROSEL START -->
+    <div class="container-fluid mt-5">
+      <div class="row rows">
+        <div class="col-md-6">
+          <div class="justify-content-end d-flex">
+            <img
+              src="image/Our-Value.png"
+              class="img-fluid"
+              width="600px"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="col-md-6 p-md-5 p-3 bg-danger mt-2"
+          style="height: fit-content"
+        >
+          <div class="text-center">
+            <h2 class="text-light fw-bold">OUR VALUES</h2>
+          </div>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="card mt-2 bg-danger border-0 text-center text-light"
+                >
+                  <div class="card-body">
+                    <h2 class="card-title text-dark fw-bold">Excellence</h2>
+                    <p class="card-text fst-italic fs-5">
+                      Trust is the cornerstone of our relationship with clients.
+                      We uphold the highest ethical standards, ensuring that
+                      your data is handled with the utmost care and
+                      confidentiality. Lorem ipsum dolor sit amet.
+                    </p>
+                    <a href="#" class="btn btn-dark">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="card mt-2 bg-danger border-0 text-center text-light"
+                >
+                  <div class="card-body">
+                    <h2 class="card-title text-dark fw-bold">Collaboration</h2>
+                    <p class="card-text fst-italic fs-5">
+                      We believe that the power of data is amplified when
+                      shared. We collaborate with our clients, working hand in
+                      hand to understand their unique challenges and co-create
+                      solutions that deliver tangible results.
+                    </p>
+                    <a href="#" class="btn btn-dark">View Details</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div
+                  class="card mt-2 bg-danger border-0 text-center text-light"
+                >
+                  <div class="card-body">
+                    <h2 class="card-title text-dark fw-bold">Innovation</h2>
+                    <p class="card-text fst-italic fs-5">
+                      In a world where data is constantly evolving, we stay
+                      ahead of the curve. Innovation is at the heart of what we
+                      do – finding new ways to uncover insights and create value
+                      from your data.
+                    </p>
+                    <a href="#" class="btn btn-dark">View Details</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div
+                  class="card mt-2 bg-danger border-0 text-center text-light"
+                >
+                  <div class="card-body">
+                    <h2 class="card-title text-dark fw-bold">Innovation</h2>
+                    <p class="card-text fst-italic fs-5">
+                      Trust is the cornerstone of our relationship with clients.
+                      We uphold the highest ethical standards, ensuring that
+                      your data is handled with the utmost care and
+                      confidentiality. Lorem ipsum dolor sit amet.
+                    </p>
+                    <a href="#" class="btn btn-dark">View Details</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Add more carousel items here -->
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARD CAROSEL END -->
+
+    <!-- AFTER BENEFITS START -->
+    <div class="container mt-5 text-center">
+      <div class="text-danger">
+        <h4>CASE STUDIES</h4>
+      </div>
+      <div class="fw-bold">
+        <h1>IT Solutions & Projects</h1>
+      </div>
+      <div class="mx-auto text-muted">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor<br />incididunt ut labore et dolore magna aliqua
+        </p>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+      <div class="row rows justify-content-center marginForAll">
+        <div
+          class="col-md-3 mx-md-2 mb-3 order-1 order-md-3 p-0 shadow mb-5 bg-body rounded"
+        >
+          <div>
+            <img src="image/CardsText.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="d-flex bg-danger p-2">
+            <div class="d-flex" style="align-items: center">
+              <span class="material-symbols-outlined fs-1"
+                >developer_board</span
+              >
+            </div>
+            <div class="mx-2 text-light fw-bold">
+              <h4>Software For Financial</h4>
+              <h5>Software Developer</h5>
+            </div>
+          </div>
+          <div class="px-4 pb-4 bg-body">
+            <p class="threeCardsFont text-muted mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis pulvinar
+            </p>
+            <div class="mt-2 d-flex">
+              <a href="#" class="text-danger">View Details</a>
+              <span class="material-symbols-outlined text-danger">
+                trending_flat
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-md-3 mx-md-2 mb-3 order-1 order-md-3 shadow mb-5 p-0 bg-body rounded"
+        >
+          <div>
+            <img src="image/CardsText.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="d-flex bg-danger p-2">
+            <div class="d-flex" style="align-items: center">
+              <span class="material-symbols-outlined fs-1"
+                >developer_board</span
+              >
+            </div>
+            <div class="mx-2 text-light fw-bold">
+              <h4>Software For Financial</h4>
+              <h5>Software Developer</h5>
+            </div>
+          </div>
+          <div class="px-4 pb-4 bg-body">
+            <p class="threeCardsFont text-muted mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis pulvinar
+            </p>
+            <div class="mt-2 d-flex">
+              <a href="#" class="text-danger">View Details</a>
+              <span class="material-symbols-outlined text-danger">
+                trending_flat
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-md-3 mx-md-2 mb-3 order-1 order-md-3 p-0 shadow mb-5 bg-body rounded"
+        >
+          <div>
+            <img src="image/CardsText.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="d-flex bg-danger p-2">
+            <div class="d-flex" style="align-items: center">
+              <span class="material-symbols-outlined fs-1"
+                >developer_board</span
+              >
+            </div>
+            <div class="mx-2 text-light fw-bold">
+              <h4>Software For Financial</h4>
+              <h5>Software Developer</h5>
+            </div>
+          </div>
+          <div class="px-4 pb-4 bg-body">
+            <p class="threeCardsFont text-muted mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis pulvinar
+            </p>
+            <div class="mt-2 d-flex">
+              <a href="#" class="text-danger">View Details</a>
+              <span class="material-symbols-outlined text-danger">
+                trending_flat
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row rows justify-content-center">
+        <div class="col-12 text-center text-muted">
+          <p>Working hard to earn our customers’ trust.</p>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <a href="#" class="text-danger">View Details</a>
+          <span class="material-symbols-outlined text-danger ml-2">
+            trending_flat
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- AFTER BENEFITS END -->
+
+    <!-- PARALLEX EFFECT START -->
+    <div class="parallax-container mt-5">
+      <div class="parallax">
+        <img src="image/background2.jpg" alt="Image 1" />
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <img src="image/background2.jpg" class="responsive img-fluid" alt="" />
+    </div>
+    <!-- PARALLEX EFFECT END -->
+
+    <!-- BELOW PARALLEX EFFECT START -->
+    <div class="container-fluid text-center change">
+      <!-- over parallex one -->
+      <div class="text-light">
+        <h1>
+          Don’t Hesitate To Contact Us For Better <br />
+          Information And Services
+        </h1>
+      </div>
+      <!-- over parallex two -->
+      <div class="mx-auto text-light mt-5">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor <br />
+          incididunt ut labore et dolore magna aliqua
+        </p>
+      </div>
+      <!-- form -->
+      <div class="container mt-5">
+        <div class="row rowss">
+          <div class="col-md-5 background border border shadow mb-5 bg-body">
+            <div class="overlay">
+              <div class="red-box bg-danger"></div>
+              <div class="text p-3">
+                <h1>Perfect Solutions For Your Business</h1>
+                <p class="mt-5">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Itaque dolores, repellendus accusantium, architecto officiis
+                  dolore ea fugiat quaerat molestias delectus non. Ipsam minima
+                  minus labore similique quasi libero assumenda soluta iste
+                  impedit commodi ducimus, reprehenderit nulla facere cum quos
+                  beatae!
+                </p>
+                <ul class="mt-5">
+                  <li>
+                    <div class="d-flex">
+                      <span class="material-symbols-outlined text-light"
+                        >done</span
+                      >
+                      <p class="text-light">Advance Advisory Team</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex">
+                      <span class="material-symbols-outlined text-light"
+                        >done</span
+                      >
+                      <p class="text-light">Professional Consulting Services</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex">
+                      <span class="material-symbols-outlined text-light"
+                        >done</span
+                      >
+                      <p class="text-light">24/7 Support Help Center</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex">
+                      <span class="material-symbols-outlined text-light"
+                        >done</span
+                      >
+                      <p class="text-light">Customer Service & Operations</p>
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-5"
+                >
+                  <a href="#" class="btn btn-light btn-md p-2 text-danger"
+                    >GET A QUOTE</a
+                  >
+                  <div class="text-light d-flex">
+                    <a href="#" class="text-light">View Details</a>
+                    <span class="material-symbols-outlined text-light ml-2"
+                      >trending_flat</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 bg-body border border-light shadow mb-5 bg-body">
+            <form class="pb-3">
+              <div class="row">
+                <div class="col-lg-6 mt-5">
+                  <div class="form-group">
+                    <label for="name" class="fw-bold">Name:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-5">
+                  <div class="form-group">
+                    <label for="name" class="fw-bold">Email:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 mt-5">
+                  <div class="form-group">
+                    <label for="selection" class="fw-bold">Selection:</label>
+                    <select
+                      class="form-control"
+                      id="selection"
+                      name="selection"
+                    >
+                      <option value="option1">Select</option>
+                      <option value="option2">IT Management</option>
+                      <option value="option2">IT Management</option>
+                      <option value="option2">IT Management</option>
+                      <option value="option2">IT Management</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-5">
+                  <div class="form-group">
+                    <label for="name" class="fw-bold">Telephone:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                      placeholder="Phone"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group mt-5">
+                <label for="additional-details" class="fw-bold"
+                  >Additional Details:</label
+                >
+                <textarea
+                  class="form-control"
+                  id="additional-details"
+                  name="additional-details"
+                  rows="3"
+                  placeholder="Write Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="mt-5 btn btn-danger">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BELOW PARALLEX EFFECT END -->
+
+    <!-- CARDS START -->
+    <div class="container change mt-5 text-center">
+      <div class="text-danger">
+        <h4>OUE BLOG</h4>
+      </div>
+      <div class="fw-bold">
+        <h1>Latest News & Articles</h1>
+      </div>
+      <div class="mx-auto text-muted">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor<br />incididunt ut labore et dolore magna aliqua
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid change mt-5">
+      <div class="row rows marginForAll">
+        <div
+          class="col-md-3 mx-md-2 mb-3 order-1 order-md-3 p-0 shadow mb-5 bg-body rounded"
+        >
+          <div>
+            <img src="image/CardsText.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="text-muted px-3">April 4,2021</p>
+          <p class="fs-4 px-3 fw-bold">
+            10 Efficient & Measurable Benefits of Software
+          </p>
+
+          <div class="px-4 pb-4 bg-body">
+            <p class="threeCardsFont text-muted mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis pulvinar
+            </p>
+            <div class="mt-2 d-flex">
+              <a href="#" class="text-danger">View Details</a>
+              <span class="material-symbols-outlined text-danger">
+                trending_flat
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-md-3 mx-md-2 mb-3 order-1 order-md-3 p-0 shadow mb-5 bg-body rounded"
+        >
+          <div>
+            <img src="image/CardsText.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="text-muted px-3">April 4,2021</p>
+          <p class="fs-4 px-3 fw-bold">
+            10 Efficient & Measurable Benefits of Software
+          </p>
+
+          <div class="px-4 pb-4 bg-body">
+            <p class="threeCardsFont text-muted mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis pulvinar
+            </p>
+            <div class="mt-2 d-flex">
+              <a href="#" class="text-danger">View Details</a>
+              <span class="material-symbols-outlined text-danger">
+                trending_flat
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-md-3 mx-md-2 mb-3 order-1 order-md-3 p-0 shadow mb-5 bg-body rounded"
+        >
+          <div>
+            <img src="image/CardsText.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="text-muted px-3">April 4,2021</p>
+          <p class="fs-4 px-3 fw-bold">
+            10 Efficient & Measurable Benefits of Software
+          </p>
+
+          <div class="px-4 pb-4 bg-body">
+            <p class="threeCardsFont text-muted mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis pulvinar
+            </p>
+            <div class="mt-2 d-flex">
+              <a href="#" class="text-danger">View Details</a>
+              <span class="material-symbols-outlined text-danger">
+                trending_flat
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARDS END -->
+
+    <!-- LAST DIV START -->
+    <div class="container-fluid change mt-5">
+      <div class="row rows justify-content-end">
+        <div class="col-md-5">
+          <h5 class="text-danger">LETS GET STARTED</h5>
+          <h2 class="fw-bold fs-1">
+            Ready to unleash the full potential of your data?
+          </h2>
+          <p class="text-muted" style="font-size: 14px">
+            Connect with us today to explore how Analytics Nest can help you
+            transform data into a strategic asset that propels your business
+            forward.
+          </p>
+          <div class="d-flex">
+            <a href="#" class="btn btn-danger rounded-pill"
+              >Get Started project</a
+            >
+            <a href="#" class="mx-2 btn rounded-pill border border-dark"
+              >Let's Talk</a
+            >
+          </div>
+        </div>
+        <div class="col-md-6 mt-2">
+          <img
+            src="image/Potential-of-your-data.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- LAST DIV END -->
+
+    <!-- FOOTER START -->
+    <footer>
+      <div class="container-fluid border bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="px-lg-0 px-sm-0 px-md-0">
+                <img src="image/final-logoW.png" width="200px" alt="" />
+              </div>
+              <div>
+                <p class="text-light px-lg-0 px-sm-0 px-md-0 fs-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod
+                </p>
+              </div>
+              <div class="mt-3">
+                <li>
+                  <div class="d-flex">
+                    <span class="material-symbols-outlined px-3 text-danger">
+                      location_on
+                    </span>
+                    <p class="text-light">
+                      Jl. Raya Kuta No.70, Kuta - Bali 80361
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <span class="material-symbols-outlined px-3 text-danger">
+                      mail
+                    </span>
+                    <p class="text-light">support@domain.com</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <span class="material-symbols-outlined px-3 text-danger">
+                      call
+                    </span>
+                    <p class="text-light">(+62)81 235 26512</p>
+                  </div>
+                </li>
+              </div>
+            </div>
+            <div class="col-md-2 text-light">
+              <h5 class="mt-5">OTHER PAGES</h5>
+              <div class="mt-3">
+                <li>
+                  <div class="d-flex">
+                    <span class="material-symbols-outlined text-danger">
+                      chevron_right
+                    </span>
+                    <p class="text-light">Home</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <span class="material-symbols-outlined text-danger">
+                      chevron_right
+                    </span>
+                    <p class="text-light">About Us</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <span class="material-symbols-outlined text-danger">
+                      chevron_right
+                    </span>
+                    <p class="text-light">Services</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <span class="material-symbols-outlined text-danger">
+                      chevron_right
+                    </span>
+                    <p class="text-light">Contact</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <span class="material-symbols-outlined text-danger">
+                      chevron_right
+                    </span>
+                    <p class="text-light">Project</p>
+                  </div>
+                </li>
+              </div>
+            </div>
+            <div class="col-md-2 text-light">
+              <h5 class="mt-5">Quick Links</h5>
+              <div class="mt-3">
+                <li>
+                  <div class="d-flex">
+                    <span class="material-symbols-outlined text-danger">
+                      chevron_right
+                    </span>
+                    <p class="text-light">Privacy Policy</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <span class="material-symbols-outlined text-danger">
+                      chevron_right
+                    </span>
+                    <p class="text-light">Disclaimer</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <span class="material-symbols-outlined text-danger">
+                      chevron_right
+                    </span>
+                    <p class="text-light">Credits</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <span class="material-symbols-outlined text-danger">
+                      chevron_right
+                    </span>
+                    <p class="text-light">FAQs</p>
+                  </div>
+                </li>
+              </div>
+            </div>
+            <div class="col-md-4 text-light">
+              <h5 class="mt-5">NEWSLETTER</h5>
+              <div>
+                <div class="search-container mt-4">
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search..."
+                  />
+                  <button type="submit" class="search-button">Search</button>
+                </div>
+              </div>
+              <div>
+                <p class="text-light mt-4">Get the latest news & updates</p>
+              </div>
+              <div>
+                <a href=""><img src="image/fb.svg" alt="" /></a>
+                <a href=""><img src="image/link.svg" alt="" /></a>
+                <a href=""><img src="image/insta.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container"><hr class="text-light" /></div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+              <p class="text-light">
+                Technolgy & IT Solution Template Kit by Baliniz
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <p class="text-light">Copyright © 2024 All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
