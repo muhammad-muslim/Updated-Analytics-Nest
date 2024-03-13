@@ -26,10 +26,9 @@ a {
 .navbar-brand,
 .nav-link {
   color: white;
-  /* Set navbar brand and link text color */
-  width: 150px;
-  /* Set width to fit its content */
-  font-size: 18px;
+  width: fit-content;
+  margin-left: 45px;
+  font-size: 16px;
 }
 
 .content {
