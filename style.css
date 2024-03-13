@@ -23,11 +23,16 @@ a {
   /* Ensure navbar is above the background image */
 }
 
-.navbar-brand,
 .nav-link {
   color: white;
   width: fit-content;
   margin-left: 45px;
+  font-size: 16px;
+}
+
+.navbar-brand{
+  color: white;
+  width: fit-content;
   font-size: 16px;
 }
 
